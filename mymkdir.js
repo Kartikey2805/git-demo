@@ -12,19 +12,18 @@ let fs = require('fs');
     }
 
     try{
-        if(fs.existsSync(`${name}-${0}`)){
-            for(let i = 0; i < n; i++)
+
+        for(let i = 0; i < n; i++){
+            if(fs.existsSync(`${name}-${i}`)) 
                 fs.rmdirSync(`${name}-${i}`);
+            else
+              fs.mkdirSync(`${name}-${i}`);
         }
-        else{
-            for(let i = 0; i < n; i++)
-                fs.mkdirSync(`${name}-${i}`);
-        }
+   
     } 
     catch(err){
         console.log("some error occured");
     }
-
-    
+ 
 })();
 

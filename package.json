@@ -11,7 +11,7 @@
         "url": "git+https://github.com/Kartikey2805/git-demo.git"
     },
     "bin": {
-        "myMkdir": "mymkdir.js"
+        "mymkdir": "mymkdir.js"
     },
     "author": "",
     "license": "ISC",
